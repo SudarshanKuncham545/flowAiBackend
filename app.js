@@ -21,12 +21,12 @@ mongoose.connect(process.env.MONGO_URI)
     console.log(`${error}`)
 })
 
-//app.use('/students', studentRoutes)
+app.use('/students', studentRoutes)
 
 app.listen(port, ()=>{
     console.log(`server started successfully at ${port}`)
 })
 
-app.use('/', (req, res)=>{
-    res.send("<h1> Welcome to Flow.AI")
-})
+///app.use('/', (req, res)=>{
+///    res.send("<h1> Welcome to Flow.AI")
+///})
