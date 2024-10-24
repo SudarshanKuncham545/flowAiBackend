@@ -27,3 +27,6 @@ app.listen(port, ()=>{
     console.log(`server started successfully at ${port}`)
 })
 
+app.use('/', (req, res)=>{
+    res.send("<h1> Welcome to Suby")
+})
