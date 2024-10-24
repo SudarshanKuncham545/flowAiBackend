@@ -28,5 +28,5 @@ app.listen(port, ()=>{
 })
 
 app.use('/', (req, res)=>{
-    res.send("<h1> Welcome to FlowAI")
+    res.send("<h1> Welcome to Flow.AI")
 })
