@@ -27,6 +27,6 @@ app.listen(port, ()=>{
     console.log(`server started successfully at ${port}`)
 })
 
-///app.use('/', (req, res)=>{
-///    res.send("<h1> Welcome to Flow.AI")
-///})
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+  })
